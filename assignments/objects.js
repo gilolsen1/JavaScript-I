@@ -20,39 +20,45 @@ const example = {
 }
 
 // Write your intern objects here:
-const Mitzi ={
+const mitzi ={
   "id":1,
   "name":"Mitzi",
   "email":"mmelloy0@psu.edu",
   "gender":"F",
 }
 
-const Kennan = {
+const kennan = {
   "id":2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
+  "speak": function kennanspeak(kennanphrase) {
+    return kennanphrase;
+  }
 }
 
-const Keven = {
+const keven = {
   "id": 3,
   "name":"Keven",
   "email":"kmummery2@wikimedia.org",
   "gender":"M",
 }
 
-const Gannie = {
+const gannie = {
   "id": 4,
   "name":"Gannie",
   "email":"gmartinson3@illinois.edu",
   "gender":"F",
 }
 
-const Antonietta = {
+const antonietta = {
   "id": 5,
   "name":"Antonietta",
   "email":"adaine5@samsung.com",
   "gender":"F",
+  multiplyNums (num1,num2){
+    return "Antonietta is a math wiz- the answer is " + (num1*num2);
+  },
 }
 
 
@@ -62,23 +68,26 @@ const Antonietta = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(Mitzi.name);
+console.log(mitzi.name);
 
 // Kennan's ID
-console.log("Kennan's ID is " + Kennan.id);
+console.log("Kennan's ID is " + kennan.id);
 // Keven's email
-console.log("Keven's email is " + Keven.email);
+console.log("Keven's email is " + keven.email);
 // Gannie's name
-console.log("Gannie's name is " + Gannie.name);
+console.log("Gannie's name is " + gannie.name);
 // Antonietta's Gender
-console.log("Antonietta's Gender is " + Antonietta.gender);
+console.log("Antonietta's Gender is " + antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+
+console.log(kennan.speak("Kennan says whattup?"));
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+
+
+console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
