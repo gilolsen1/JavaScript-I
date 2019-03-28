@@ -62,8 +62,6 @@ const antonietta = {
 }
 
 
-
-
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
@@ -89,7 +87,12 @@ console.log(kennan.speak("Kennan says whattup?"));
 
 console.log(antonietta.multiplyNums(3,4));
 
-// === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
+// === Great work! === Head over to the the arrays.js file 
+
+
+//NEXT ACTION HERE:  or take a look at the stretch challenge
+
+
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
 
