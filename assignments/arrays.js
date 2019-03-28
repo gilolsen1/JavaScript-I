@@ -68,10 +68,14 @@ console.log(`Car 33 is a ${inventory[33].car_year} ${inventory[33].car_make} ${i
 
 
 // ==== Challenge 2 ====
-// The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log(`The last car in the inventory is a ${inventory[lastCar].car_make} ${inventory[lastCar].car_model}`);
+// The dealer needs the information on the last car in their inventory.  
+//What is the make and model of the last car in the inventory?  Log the make and model into the console.
+
+let lastCar = 0; // no notes on why this exists as zero, see note below
+
+console.log(`The last car in the inventory is a ${inventory[inventory.length - 1].car_make} ${inventory[inventory.length -1].car_model}`);
 //note: variables are camelCase sensitive
+//NOTE:  ignored lastCar variable, and used .length-1 to access the actual "last" car in the inventory array. 
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. 
@@ -120,9 +124,24 @@ for (let i=0; i<carYears.length; i++) {
 console.log(oldCars.length); 
 
 // ==== Challenge 6 ====
-// A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
+// A buyer is interested in seeing only BMW and Audi cars within the inventory.  
+//Return an array that only contains BMW and Audi cars.  
+//Once you have populated the BMWAndAudi array, 
+
+//use JSON.stringify() to show the results of the array in the console.
+
 let BMWAndAudi = [];
-console.log();
+
+for (let i=0; i<inventory.length; i++) {
+    if (inventory[i].car_make === "Audi" || inventory[i].car_make === "BMW"){
+        BMWAndAudi.push(inventory[i])
+    }
+}
+
+const myJSON = JSON.stringify(BMWAndAudi);
+//console.log(BMWAndAudi);
+
+console.log(myJSON);
 
 
 
